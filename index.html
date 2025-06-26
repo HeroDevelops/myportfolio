@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Develops - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://wallpapercave.com/wp/wp5730715.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      line-height: 1.6;
+      padding: 20px;
+      position: relative;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #90cdf4;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .tagline {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+    section {
+      margin-top: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      backdrop-filter: blur(4px);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    .cta {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .btn {
+      background: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #1d4ed8;
+    }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div class="content">
+    <header>
+      <div class="logo"> My Portfolio</div>
+      <nav>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Hero Develops</h1>
+      <p class="tagline">Hi I'm Vimal , I build fast and modern websites for gamers, streamers, and brands.</p>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate web developer focused on gaming, tools, and modern UI experiences. Whether it's a landing page or a tool-based app, I can help bring your idea online.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Gaming themed Websites</h3>
+            <p>for gamers </p>
+            <img src="https://assets.wpdeveloper.com/2022/03/Pack-Banner.webp">
+          </div>
+          <div class="card">
+            <h3>Online shopping websites</h3>
+            <p>for stores and online products</p>
+            <img src="https://wallpapercave.com/wp/wp7566293.jpg" alt="Telegram Game">
+          </div>
+          <div class="card">
+            <h3>Personalized Websites</h3>
+            <p>For who wants their own webs</p>
+            <img src="https://wallpapercave.com/wp/wp9763801.jpg" alt="Monitor">
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>📩 Reach me via Instagram or WhatsApp to get your site built!</p>
+        <div class="cta">
+          <a href="https://www.instagram.com/web_maker_41?igsh=MXB2aTlzaDE2NnJqdQ%3D%3D&utm_source=qr" target="_blank" class="btn">Message on Instagram</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2025 Hero Develops — All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
